@@ -51,7 +51,6 @@ python -m http.server 8000
 - **Solo PDFs**: Restrición a archivos PDF únicamente
 - **Sin backend**: Persistencia local (IndexedDB) únicamente
 - **Sin revisión real**: Simulación del proceso de revisión
-- **Sin notificaciones**: No hay sistema de notificaciones push
 - **Sin multi-usuario**: Diseñado para uso individual
 
 ## Tecnologías Utilizadas
