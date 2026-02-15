@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review PWA - Subida de Artículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card" id="article-form-container">
+    <h2>Subir Artículo Académico</h2>
+    <form id="articleForm">
+        <div class="form-group">
+            <label for="title">Título del Artículo</label>
+            <input type="text" id="title" required placeholder="Ej: Avances en IA 2026">
+        </div>
+        <div class="form-group">
+            <label for="file">Documento (PDF)</label>
+            <input type="file" id="file" accept=".pdf" required>
+        </div>
+        <button type="submit">Enviar a Revisión</button>
+    </form>
+    <div id="message"></div>
+</div>
+
+<script src="ArticleStorage.js"></script>
+<script src="ArticleManager.js"></script>
+
+<script>
+/**
+ * CAPA DE PRESENTACIÓN: ArticleForm (Controlador UI)
+ */
+const form = document.getElementById('articleForm');
+const messageBox = document.getElementById('message');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const title = document.getElementById('title').value;
+    const file = document.getElementById('file').files[0];
+
+    try {
+        const id = await ArticleManager.processSubmission(title, file);
+        messageBox.textContent = `¡Éxito! Artículo guardado con ID: ${id}. Estado: Recibido.`;
+        messageBox.className = "msg-success";
+        form.reset();
+    } catch (err) {
+        alert("Error: " + err);
+    }
+});
+</script>
+
+</body>
+</html>

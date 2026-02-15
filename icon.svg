@@ -1,0 +1,36 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bgGradient)"/>
+  
+  <!-- Document icon -->
+  <g transform="translate(96, 64)">
+    <!-- Main document -->
+    <rect x="0" y="0" width="320" height="384" rx="12" fill="#ffffff" opacity="0.95"/>
+    
+    <!-- Document lines -->
+    <rect x="32" y="48" width="256" height="16" rx="4" fill="#2c3e50" opacity="0.8"/>
+    <rect x="32" y="80" width="200" height="16" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="112" width="240" height="16" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="144" width="180" height="16" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="176" width="220" height="16" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="208" width="160" height="16" rx="4" fill="#2c3e50" opacity="0.6"/>
+    
+    <!-- Checkmark circle -->
+    <circle cx="256" cy="320" r="48" fill="#27ae60" opacity="0.9"/>
+    <path d="M236 320 L248 332 L276 304" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Academic cap symbol -->
+  <g transform="translate(176, 280)">
+    <path d="M80 0 L160 40 L80 80 L0 40 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M80 80 L80 120 L40 100 L40 60 L80 40" fill="#ffffff" opacity="0.7"/>
+    <path d="M80 80 L80 120 L120 100 L120 60 L80 40" fill="#ffffff" opacity="0.7"/>
+  </g>
+</svg>
