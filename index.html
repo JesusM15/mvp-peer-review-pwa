@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peer Review PWA - Subida de Artículo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#2c3e50"> 
 </head>
 <body>
 
@@ -26,7 +28,15 @@
 
 <script src="ArticleStorage.js"></script>
 <script src="ArticleManager.js"></script>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('SW registrado', reg))
+        .catch(err => console.error('Error al registrar SW', err));
+    });
+  }
+</script>
 <script>
 /**
  * CAPA DE PRESENTACIÓN: ArticleForm (Controlador UI)

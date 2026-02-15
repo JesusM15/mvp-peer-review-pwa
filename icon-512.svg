@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradientLarge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bgGradientLarge)"/>
+  
+  <!-- Document icon -->
+  <g transform="translate(128, 96)">
+    <!-- Main document -->
+    <rect x="0" y="0" width="256" height="320" rx="16" fill="#ffffff" opacity="0.95"/>
+    
+    <!-- Document lines -->
+    <rect x="32" y="48" width="192" height="20" rx="4" fill="#2c3e50" opacity="0.8"/>
+    <rect x="32" y="80" width="128" height="20" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="112" width="170" height="20" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="144" width="106" height="20" rx="4" fill="#2c3e50" opacity="0.6"/>
+    <rect x="32" y="176" width="150" height="20" rx="4" fill="#2c3e50" opacity="0.6"/>
+    
+    <!-- Checkmark circle -->
+    <circle cx="192" cy="256" r="32" fill="#27ae60" opacity="0.9"/>
+    <path d="M176 256 L184 264 L200 248" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Academic cap symbol -->
+  <g transform="translate(176, 280)">
+    <path d="M80 0 L160 40 L80 80 L0 40 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M80 80 L80 120 L40 100 L40 60 L80 40" fill="#ffffff" opacity="0.7"/>
+    <path d="M80 80 L80 120 L120 100 L120 60 L80 40" fill="#ffffff" opacity="0.7"/>
+  </g>
+  
+  <!-- Peer Review Text -->
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">Peer Review</text>
+</svg>
